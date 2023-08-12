@@ -73,7 +73,7 @@ export const ContextProvider = ({ children }) => {
     if (getData) {
       setInventoryData(getData);
     }
-  });
+  },[]);
   return (
     <EnventoryContext.Provider
       value={{

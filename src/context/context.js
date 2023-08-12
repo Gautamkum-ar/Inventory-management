@@ -70,7 +70,9 @@ export const ContextProvider = ({ children }) => {
 
   useEffect(() => {
     const getData = JSON.parse(sessionStorage.getItem("data"));
-    setInventoryData(getData);
+    if (getData) {
+      setInventoryData(getData);
+    }
   });
   return (
     <EnventoryContext.Provider

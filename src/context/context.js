@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { createContext } from "react";
-import { useSearchParams } from "react-router-dom";
+import { json, useSearchParams } from "react-router-dom";
 import { inventoryData } from "../database/inventoryData";
 
 const EnventoryContext = createContext();
@@ -63,8 +63,15 @@ export const ContextProvider = ({ children }) => {
   };
 
   const handleNewProduct = (data) => {
-    setInventoryData([...inventoryData, { ...data, id: 1 }]);
+    const datas = [...inventData, { ...data }];
+    setInventoryData(datas);
+    sessionStorage.setItem("data", JSON.stringify(datas));
   };
+
+  useEffect(() => {
+    const getData = JSON.parse(sessionStorage.getItem("data"));
+    setInventoryData(getData);
+  });
   return (
     <EnventoryContext.Provider
       value={{

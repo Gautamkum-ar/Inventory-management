@@ -1,0 +1,44 @@
+
+
+.add__new__item{
+    display: flex;
+    position: fixed;
+    top: 4rem;
+    flex-direction: column;
+    background: #fff;
+    right: 0;
+    left: 15%;
+    bottom: 0;
+    padding: 1rem;
+
+}
+
+.add__new__item label{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+.add__new__item .close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.add__new__item label input{
+    height: 1.5rem;
+}
+
+.add__new__item button{
+width: 7rem;   
+padding: 0.5rem; 
+border: none;
+border-radius: 5px ;
+background: #4fa7da;
+color: #fff;
+margin: 0.5rem auto;
+}

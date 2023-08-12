@@ -1,0 +1,44 @@
+
+
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 13rem;
+    height: 7rem;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 1px 1px 10px #999;
+    color: #1f831f;
+    
+}
+.card h3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+}
+.card:nth-child(2){
+    color: #e49a32;
+}
+.card:nth-child(3){
+    color: #ef2e0c;
+}
+
+.depart__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 13rem;
+    height: 7rem;
+    border-radius: 5px;
+    margin: 1rem;
+    box-shadow: 1px 1px 10px #999;
+    color: #333;
+    cursor: pointer;
+
+}

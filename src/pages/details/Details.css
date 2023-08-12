@@ -1,0 +1,14 @@
+
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+
+}
+
+.details img{
+    width: 20rem;
+    height: 20rem;
+}

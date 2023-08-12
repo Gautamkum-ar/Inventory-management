@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router";
+import "./App.css";
+import { DashBoard } from "./pages/dashboard/Dashboard";
+import { Departments } from "./pages/department/Department";
+import { ProductListing } from "./pages/productlisting/ProductListing";
+import { Details } from "./pages/details/Details";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <h1 className="logo">Inventory Management App</h1>
+      </nav>
+      <Routes>
+        <Route path="/" element={<DashBoard />} />
+        <Route path="/departments" element={<Departments />} />
+        <Route path="/products" element={<ProductListing />} />
+        <Route path="/details/:productId" element={<Details />} />
+      </Routes>
     </div>
   );
 }

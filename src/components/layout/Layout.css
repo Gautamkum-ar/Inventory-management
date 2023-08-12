@@ -1,0 +1,44 @@
+
+
+
+.layout{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    margin-top: 4rem;
+    position: relative;
+}
+
+.navigations{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+    background: #1c6278f7;
+    padding: 1rem;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+}
+
+.navigations a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+    height: 2rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(24, 25, 24);
+
+    padding: 0.9rem;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 20%;
+    padding: 1rem;
+}
